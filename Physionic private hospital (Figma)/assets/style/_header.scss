@@ -1,0 +1,111 @@
+header {
+  .navigation-bar {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 3;
+    .container {
+      .navbar-wrapper {
+        @include aside;
+        .logo-navbar {
+          display: flex;
+          align-items: center;
+          h3 {
+            margin-right: 30%;
+            a {
+              color: black;
+              font-size: 24px;
+              font-weight: 700;
+              letter-spacing: 0.10000000149011612px;
+              line-height: 32px;
+              border: 1px solid transparent;
+              font-style: normal;
+              &:hover {
+                transition: 0.5;
+                color: #23a6f0;
+              }
+            }
+          }
+          .navbar {
+            ul {
+              display: flex;
+              gap: 21px;
+              li {
+                a {
+                  font-size: 14px;
+                  font-weight: 600;
+                  font-style: normal;
+                  line-height: 24px;
+                  letter-spacing: 0.2px;
+                  text-align: center;
+                  color: rgb(0, 0, 0);
+                  &:hover {
+                    transition: 0.5;
+                    color: #23a6f0;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        button {
+          background-color: #23a6f0;
+          color: white;
+          border: #23a6f0;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 14px;
+          transition: 0.3s;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0.20000000298023224px;
+          text-align: left;
+          padding: 15px 25px;
+          span {
+            color: #ffffff;
+            &:hover {
+              color: #23a6f0;
+            }
+          }
+          svg {
+            margin-left: 15px;
+            width: 12px;
+            height: 10px;
+          }
+          &:hover {
+            transition: 0.3s;
+            background-color: #ffffff;
+            color: #23a6f0;
+            border: 1px solid #23a6f0;
+            span {
+              color: #23a6f0;
+            }
+          }
+        }
+        .navbar-mobile {
+          display: none;
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .navbar-click-list {
+          display: none;
+        }
+        .inputMobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}

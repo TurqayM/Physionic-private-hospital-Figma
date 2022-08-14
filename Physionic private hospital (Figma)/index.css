@@ -1,0 +1,4346 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+header .navigation-bar {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: 3;
+}
+
+header .navigation-bar .container .navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navigation-bar .container .navbar-wrapper .logo-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navigation-bar .container .navbar-wrapper .logo-navbar h3 {
+  margin-right: 30%;
+}
+
+header .navigation-bar .container .navbar-wrapper .logo-navbar h3 a {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.10000000149011612px;
+  line-height: 32px;
+  border: 1px solid transparent;
+  font-style: normal;
+}
+
+header .navigation-bar .container .navbar-wrapper .logo-navbar h3 a:hover {
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  color: #23a6f0;
+}
+
+header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+}
+
+header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: black;
+}
+
+header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul li a:hover {
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  color: #23a6f0;
+}
+
+header .navigation-bar .container .navbar-wrapper button {
+  background-color: #23a6f0;
+  color: white;
+  border: #23a6f0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  padding: 15px 25px;
+}
+
+header .navigation-bar .container .navbar-wrapper button span {
+  color: #ffffff;
+}
+
+header .navigation-bar .container .navbar-wrapper button span:hover {
+  color: #23a6f0;
+}
+
+header .navigation-bar .container .navbar-wrapper button svg {
+  margin-left: 15px;
+  width: 12px;
+  height: 10px;
+}
+
+header .navigation-bar .container .navbar-wrapper button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #ffffff;
+  color: #23a6f0;
+  border: 1px solid #23a6f0;
+}
+
+header .navigation-bar .container .navbar-wrapper button:hover span {
+  color: #23a6f0;
+}
+
+header .navigation-bar .container .navbar-wrapper .navbar-mobile {
+  display: none;
+}
+
+header .navigation-bar .container .navbar-wrapper .navbar-mobile svg {
+  width: 24px;
+  height: 24px;
+}
+
+header .navigation-bar .container .navbar-wrapper .navbar-click-list {
+  display: none;
+}
+
+header .navigation-bar .container .navbar-wrapper .inputMobile {
+  display: none;
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@media (max-width: 1200px) {
+  header .navigation-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  header .navigation-bar .container {
+    padding: 0 45px 0 45px;
+  }
+  header .navigation-bar .container .navbar-wrapper {
+    margin-right: 30px;
+  }
+  header .navigation-bar .container .navbar-wrapper h3 a {
+    margin-right: 50px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  header .navigation-bar {
+    width: 100%;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 0;
+  }
+  header .navigation-bar .container {
+    padding: 0 20px 0 20px;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 {
+    margin-right: 0%;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 a {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.10000000149011612px;
+    line-height: 32px;
+    border: 1px solid transparent;
+    font-style: normal;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 a:hover {
+    -webkit-transition: 0.5;
+    transition: 0.5;
+    color: #23a6f0;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 21px;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul li a {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #000000;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul li a:hover {
+    -webkit-transition: 0.5;
+    transition: 0.5;
+    color: #23a6f0;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navigation-bar {
+    background-color: #F6F6F6;
+    position: fixed;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  header .navigation-bar .container {
+    padding: 0 70px;
+  }
+  header .navigation-bar .container .navbar-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 36px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 {
+    margin-right: 30%;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 a {
+    color: #11141f;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.10000000149011612px;
+    line-height: 32px;
+    border: 1px solid transparent;
+    font-style: normal;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 a:hover {
+    -webkit-transition: 0.5;
+    transition: 0.5;
+    color: #23a6f0;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 21px;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul li a {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #ffffff;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul li a:hover {
+    -webkit-transition: 0.5;
+    transition: 0.5;
+    color: #23a6f0;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar {
+    display: none;
+  }
+  header .navigation-bar .container .navbar-wrapper .button {
+    display: none;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-mobile {
+    display: block;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-mobile svg {
+    margin-left: 24px;
+    color: #737373;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list {
+    width: 100%;
+    background-color: #F6F6F6;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list nav .click-list {
+    padding: 100px 0;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list nav .click-list .click-list-item {
+    text-align: center;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list nav .click-list .click-list-item:not(:first-child) {
+    margin-top: 30px;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list nav .click-list .click-list-item a {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  header .navigation-bar .container .navbar-wrapper .show-click {
+    left: 0;
+  }
+  header .navigation-bar .container .navbar-wrapper .inputMobile {
+    display: block;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 82px;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    width: 100%;
+    left: 100%;
+  }
+  header .navigation-bar .container .navbar-wrapper .inputMobile input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: #f6f6f6;
+  }
+  header .navigation-bar .container .navbar-wrapper .input-show {
+    left: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  header .navigation-bar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  header .navigation-bar .container {
+    padding: 0 10px;
+  }
+  header .navigation-bar .container .navbar-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 36px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 {
+    margin-right: 30%;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 a {
+    color: #252b42;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.10000000149011612px;
+    line-height: 32px;
+    border: 1px solid transparent;
+    font-style: normal;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar h3 a:hover {
+    -webkit-transition: 0.5;
+    transition: 0.5;
+    color: #23a6f0;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 21px;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul li a {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #ffffff;
+  }
+  header .navigation-bar .container .navbar-wrapper .logo-navbar .navbar ul li a:hover {
+    -webkit-transition: 0.5;
+    transition: 0.5;
+    color: #23a6f0;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar {
+    display: none;
+  }
+  header .navigation-bar .container .navbar-wrapper .button {
+    display: none;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-mobile {
+    display: block;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-mobile svg {
+    margin-left: 24px;
+    color: #737373;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list {
+    width: 100%;
+    background-color: #F6F6F6;
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list nav .click-list {
+    padding: 100px 0;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list nav .click-list .click-list-item {
+    text-align: center;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list nav .click-list .click-list-item:not(:first-child) {
+    margin-top: 30px;
+  }
+  header .navigation-bar .container .navbar-wrapper .navbar-click-list nav .click-list .click-list-item a {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  header .navigation-bar .container .navbar-wrapper .show-click {
+    left: 0;
+  }
+  header .navigation-bar .container .navbar-wrapper .inputMobile {
+    display: block;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 82px;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+    width: 100%;
+    left: 100%;
+  }
+  header .navigation-bar .container .navbar-wrapper .inputMobile input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: #f6f6f6;
+  }
+  header .navigation-bar .container .navbar-wrapper .input-show {
+    left: 0;
+  }
+}
+
+footer #footer .container .footer-navbar {
+  width: 100%;
+  height: 338px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 100px;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch {
+  margin-bottom: 21px;
+  margin-left: 30px;
+  width: 210px;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #252b42;
+  margin-bottom: 25px;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch a:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #23a6f0;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch .socials {
+  margin-top: 26px;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch .socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch .socials ul li {
+  margin-right: 22px;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg {
+  color: #23a6f0;
+  width: 24px;
+  height: 23px;
+  cursor: pointer;
+}
+
+footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #737373;
+}
+
+footer #footer .container .footer-navbar .company-info h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #252b42;
+  margin-bottom: 20px;
+}
+
+footer #footer .container .footer-navbar .company-info ul li {
+  margin-bottom: 10px;
+}
+
+footer #footer .container .footer-navbar .company-info ul li a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+footer #footer .container .footer-navbar .company-info ul li a:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #23a6f0;
+}
+
+footer #footer .ending {
+  background-color: #fafafa;
+  width: 100%;
+  height: 76px;
+  text-align: center;
+  padding: 25px 27px;
+}
+
+footer #footer .ending p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+}
+
+@media (max-width: 1200px) {
+  footer #footer .container {
+    padding: 0 65px;
+  }
+  footer #footer .container .footer-navbar {
+    width: 100%;
+    height: 338px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 100px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch {
+    margin-bottom: 21px;
+    margin-left: 30px;
+    width: 210px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #252b42;
+    margin-bottom: 25px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials {
+    margin-top: 26px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li {
+    margin-right: 22px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg {
+    color: #23a6f0;
+    width: 24px;
+    height: 23px;
+    cursor: pointer;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #737373;
+  }
+  footer #footer .container .footer-navbar .company-info h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #252b42;
+    margin-bottom: 20px;
+  }
+  footer #footer .container .footer-navbar .company-info ul li {
+    margin-bottom: 10px;
+  }
+  footer #footer .container .footer-navbar .company-info ul li a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  footer #footer .container .footer-navbar .company-info ul li a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+  }
+  footer #footer .ending {
+    background-color: #fafafa;
+    width: 100%;
+    height: 76px;
+    text-align: center;
+    padding: 25px 27px;
+  }
+  footer #footer .ending p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+}
+
+@media (max-width: 992px) {
+  footer #footer .container {
+    padding: 0 45px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch {
+    margin-bottom: 21px;
+    margin-left: 30px;
+    width: 210px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #252b42;
+    margin-bottom: 25px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials {
+    margin-top: 26px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li {
+    margin-right: 22px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg {
+    color: #23a6f0;
+    width: 24px;
+    height: 23px;
+    cursor: pointer;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #737373;
+  }
+  footer #footer .container .footer-navbar .company-info h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #252b42;
+    margin-bottom: 20px;
+  }
+  footer #footer .container .footer-navbar .company-info ul li {
+    margin-bottom: 10px;
+  }
+  footer #footer .container .footer-navbar .company-info ul li a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  footer #footer .container .footer-navbar .company-info ul li a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+  }
+  footer #footer .ending {
+    background-color: #fafafa;
+    width: 100%;
+    height: 76px;
+    text-align: center;
+    padding: 25px 27px;
+  }
+  footer #footer .ending p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+}
+
+@media (max-width: 768px) {
+  footer #footer .container {
+    padding: 0 5px;
+  }
+  footer #footer .container .footer-navbar {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch {
+    margin-bottom: 20px;
+    width: 23%;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #252b42;
+    margin-bottom: 25px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials {
+    margin-top: 0px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li {
+    margin-right: 22px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg {
+    color: #23a6f0;
+    width: 24px;
+    height: 23px;
+    cursor: pointer;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #737373;
+  }
+  footer #footer .container .footer-navbar .company-info {
+    margin-left: 20px;
+    width: 100%;
+  }
+  footer #footer .container .footer-navbar .company-info h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #252b42;
+    margin-bottom: 20px;
+  }
+  footer #footer .container .footer-navbar .company-info ul li {
+    margin-bottom: 20px;
+  }
+  footer #footer .container .footer-navbar .company-info ul li a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  footer #footer .container .footer-navbar .company-info ul li a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+  }
+  footer #footer .ending {
+    background-color: #fafafa;
+    width: 100%;
+    height: 76px;
+    text-align: center;
+    padding: 25px 27px;
+  }
+  footer #footer .ending p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+}
+
+@media (max-width: 460px) {
+  footer #footer {
+    margin-top: 200px;
+  }
+  footer #footer .container {
+    padding: 0 90px;
+  }
+  footer #footer .container .footer-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-left: 40px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch {
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #252b42;
+    margin-bottom: 30px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials {
+    margin-top: 26px;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg {
+    color: #23a6f0;
+    width: 24px;
+    height: 23px;
+    cursor: pointer;
+  }
+  footer #footer .container .footer-navbar .get-in-tuch .socials ul li svg:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #737373;
+  }
+  footer #footer .container .footer-navbar .company-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer #footer .container .footer-navbar .company-info h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #252b42;
+  }
+  footer #footer .container .footer-navbar .company-info ul {
+    width: 100%;
+  }
+  footer #footer .container .footer-navbar .company-info ul li {
+    margin-bottom: 10px;
+  }
+  footer #footer .container .footer-navbar .company-info ul li a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+  }
+  footer #footer .container .footer-navbar .company-info ul li a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+  }
+  footer #footer .ending {
+    margin-top: 200px;
+    background-color: #fafafa;
+    width: 100%;
+    height: 76px;
+    text-align: center;
+    padding: 25px 27px;
+  }
+  footer #footer .ending p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding: 0 197px;
+}
+
+.brief-information {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.brief-information h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+
+.brief-information p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+}
+
+footer a {
+  color: #737373;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #home {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 53px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5))), url(assets/images/BV-Acharya-3.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)), url(assets/images/BV-Acharya-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+main #home .container .home-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10%;
+}
+
+main #home .container .home-main .first-part--about {
+  padding-top: 15%;
+}
+
+main #home .container .home-main .first-part--about h1 {
+  width: 75%;
+  margin-bottom: 35px;
+  position: static;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+main #home .container .home-main .first-part--about h4 {
+  margin-bottom: 35px;
+  margin-right: 45%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+main #home .container .home-main .first-part--about .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #home .container .home-main .first-part--about .buttons .first-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  height: auto;
+  background-color: #23a6f0;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 37px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  padding: 15px 36px 15px 36px;
+}
+
+main #home .container .home-main .first-part--about .buttons .first-button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #ffffff;
+  color: #23a6f0;
+  border: 1px solid #23a6f0;
+}
+
+main #home .container .home-main .first-part--about .buttons .second-button {
+  height: auto;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 37px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  padding: 15px 36px 15px 36px;
+}
+
+main #home .container .home-main .first-part--about .buttons .second-button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #23a6f0;
+  color: #ffffff;
+  border: 1px solid #23a6f0;
+}
+
+main #home .container .home-main .second-part--card {
+  background-color: #ffffff;
+  color: #252b42;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 42px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #home .container .home-main .second-part--card h3 {
+  color: #252b42;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main #home .container .home-main .second-part--card .appointment h6 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+main #home .container .home-main .second-part--card .appointment input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  padding: 10px;
+  text-align: left;
+}
+
+main #home .container .home-main .second-part--card .appointment .form-control {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+
+main #home .container .home-main .second-part--card .appointment .submit {
+  margin-top: 30px;
+  background-color: #23a6f0;
+  color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  padding: 15px 36px 15px 36px;
+}
+
+main #home .container .home-main .second-part--card .appointment .submit:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #ffffff;
+  color: #23a6f0;
+  border-color: #23a6f0;
+}
+
+main #leading-medicine {
+  background-color: white;
+}
+
+main #leading-medicine .container .leading-medicine--main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 112px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #leading-medicine .container .leading-medicine--main .brief-information {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 112px;
+}
+
+main #leading-medicine .container .leading-medicine--main .brief-information h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+
+main #leading-medicine .container .leading-medicine--main .brief-information p {
+  word-break: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card .two-cards {
+  width: 29.5%;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases {
+  padding: 30px 45px 30px 45px;
+  background-color: #8ec2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases .icon {
+  width: 73px;
+  height: 72px;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul {
+  background-color: #ffffff;
+  padding: 28px 42px 28px 42px;
+  border-radius: 11px;
+  border: 1px solid #a9d6ff;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul ul li {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+  margin-bottom: 5px;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a {
+  color: #23a6f0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  margin-bottom: 5px;
+}
+
+main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #23a6f0;
+  letter-spacing: 0.9px;
+}
+
+main #the-best--doctors {
+  background-color: #fafafa;
+}
+
+main #the-best--doctors .container .testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 112px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #the-best--doctors .container .testimonials .brief-information {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+main #the-best--doctors .container .testimonials .brief-information h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+
+main #the-best--doctors .container .testimonials .brief-information p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+}
+
+main #the-best--doctors .container .testimonials .all-cards {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #the-best--doctors .container .testimonials .all-cards .testimonials-cards {
+  text-align: left;
+  border-radius: 5px;
+  background-color: yellow;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 35px 30px 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #the-best--doctors .container .testimonials .all-cards .testimonials-cards p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+}
+
+main #the-best--doctors .container .testimonials .all-cards .testimonials-cards img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main #FAQ {
+  background-color: #fafafa;
+}
+
+main #FAQ .container .About-FAQ--cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 112px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #FAQ .container .About-FAQ--cards .brief-information {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+main #FAQ .container .About-FAQ--cards .brief-information h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+
+main #FAQ .container .About-FAQ--cards .brief-information p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+}
+
+main #FAQ .container .About-FAQ--cards .FAQ-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards .vector svg {
+  width: 9px;
+  height: 16px;
+  margin-right: 20px;
+}
+
+main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards .card-text a
+h5 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #252b42;
+}
+
+main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards .card-text p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+}
+
+main #prices {
+  height: auto;
+  background-color: #fafafa;
+}
+
+main #prices .container {
+  padding: 0 60px;
+}
+
+main #prices .container .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 112px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #prices .container .pricing .brief-information {
+  width: 65%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+main #prices .container .pricing .brief-information h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+
+main #prices .container .pricing .brief-information p {
+  width: 60%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  color: #737373;
+  margin-left: 20%;
+}
+
+main #prices .container .pricing .pricing-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 30px;
+  margin-left: 2px;
+  border: 1px solid #23a6f0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-name h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-name p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #737373;
+  margin-bottom: 15px;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .price {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #23a6f0;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .dollar {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  margin-right: 10px;
+  color: #23a6f0;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price h6 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #8ec2f2;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .per-month--dollar {
+  margin-top: 5px;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 17.5px;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li svg {
+  margin-top: 4px;
+  margin-right: 10px;
+  width: 32px;
+  height: 30px;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #252b42;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards:hover p,
+main #prices .container .pricing .pricing-cards .three-price--cards:hover h3 {
+  color: #ffffff;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards:hover .pricing-list span {
+  color: #ffffff;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards:hover button {
+  color: #ffffff;
+}
+
+main #prices .container .pricing .pricing-cards .three-price--cards:hover button:hover {
+  border: 2px solid #23bdfa;
+  color: #23a6f0;
+}
+
+main #prices .container .pricing .price-button button {
+  margin-top: 45px;
+  margin-left: 10px;
+  height: 52px;
+  width: 246px;
+  background-color: #23a6f0;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  padding: 15px, 40px, 15px, 40px;
+  gap: 10px;
+}
+
+main #prices .container .pricing .price-button button:hover {
+  background-color: #ffffff;
+  color: #23a6f0;
+  border: 2px solid #23a6f0;
+}
+
+main #contact {
+  background-color: #252b42;
+  color: #ffffff;
+}
+
+main #contact .container .contact-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
+}
+
+main #contact .container .contact-email .contact-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+main #contact .container .contact-email .contact-text p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  width: 60%;
+}
+
+main #contact .container .contact-email .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #contact .container .contact-email .email form {
+  width: 100%;
+  position: relative;
+  margin-right: 110px;
+}
+
+main #contact .container .contact-email .email form .email-input {
+  border: #ffffff;
+  background-color: #ffffff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #737373;
+  height: 58px;
+  width: 269px;
+  text-indent: 20px;
+}
+
+main #contact .container .contact-email .email form button {
+  padding: 15px 22px;
+  outline: none;
+  position: absolute;
+  background-color: #24a5f0;
+  cursor: pointer;
+  color: #ffffff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+}
+
+main #contact .container .contact-email .email form button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #0077ff;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  main #home .container {
+    padding: 0 75px;
+  }
+  main #home .container .home-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10%;
+  }
+  main #home .container .home-main .first-part--about {
+    padding-top: 15%;
+  }
+  main #home .container .home-main .first-part--about h1 {
+    width: 75%;
+    margin-bottom: 35px;
+    position: static;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+  main #home .container .home-main .first-part--about h4 {
+    margin-bottom: 35px;
+    margin-right: 45%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+  main #home .container .home-main .first-part--about .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #home .container .home-main .first-part--about .buttons .first-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 10px;
+    height: auto;
+    background-color: #23a6f0;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 37px;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .first-part--about .buttons .first-button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border: 1px solid #23a6f0;
+  }
+  main #home .container .home-main .first-part--about .buttons .second-button {
+    height: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 37px;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .first-part--about .buttons .second-button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #23a6f0;
+    color: #ffffff;
+    border: 1px solid #23a6f0;
+  }
+  main #home .container .home-main .second-part--card {
+    background-color: #ffffff;
+    color: #252b42;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 42px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #home .container .home-main .second-part--card h3 {
+    color: #252b42;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  main #home .container .home-main .second-part--card .appointment h6 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  main #home .container .home-main .second-part--card .appointment input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding: 10px;
+    text-align: left;
+  }
+  main #home .container .home-main .second-part--card .appointment .form-control {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+  }
+  main #home .container .home-main .second-part--card .appointment .submit {
+    margin-top: 30px;
+    background-color: #23a6f0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .second-part--card .appointment .submit:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border-color: #23a6f0;
+  }
+  main #leading-medicine {
+    background-color: white;
+  }
+  main #leading-medicine .container {
+    padding: 0 65px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 112px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information p {
+    word-break: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards {
+    width: 29.5%;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases {
+    padding: 30px 45px 30px 45px;
+    background-color: #8ec2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases .icon {
+    width: 73px;
+    height: 72px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases h5 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin: 0 10px;
+    color: #ffffff;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul {
+    background-color: #ffffff;
+    padding: 28px 42px 28px 42px;
+    border-radius: 11px;
+    border: 1px solid #a9d6ff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul ul li {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+    margin-bottom: 5px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a {
+    color: #23a6f0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    margin-bottom: 5px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+    letter-spacing: 0.9px;
+  }
+  main #the-best--doctors {
+    background-color: #fafafa;
+  }
+  main #the-best--doctors .container {
+    padding: 0 45px;
+  }
+  main #the-best--doctors .container .testimonials .brief-information {
+    width: 60%;
+  }
+  main #the-best--doctors .container .testimonials .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #the-best--doctors .container .testimonials .brief-information p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #the-best--doctors .container .testimonials .all-cards {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards {
+    text-align: left;
+    border-radius: 5px;
+    background-color: yellow;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #FAQ .container {
+    padding: 0 90px;
+  }
+  main #FAQ .container .About-FAQ--cards .brief-information {
+    width: 60%;
+  }
+  main #FAQ .container .About-FAQ--cards .brief-information h2 {
+    font-size: 40px;
+  }
+  main #FAQ .container .About-FAQ--cards .brief-information p {
+    font-size: 14px;
+    color: #737373;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards {
+    padding: 30px;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards .card-text a {
+    font-size: 16px;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards .card-text p {
+    font-size: 14px;
+  }
+  main #prices .container {
+    padding: 0 50px;
+  }
+  main #prices .container .pricing .brief-information {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  main #prices .container .pricing .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #prices .container .pricing .brief-information p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #prices .container .pricing .pricing-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 2px;
+    border: 1px solid #23a6f0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name {
+    padding: 20px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name p {
+    width: 60%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #737373;
+    margin-left: 0px;
+    margin-bottom: 35px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .price {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #23a6f0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .dollar {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin-right: 10px;
+    color: #23a6f0;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price h6 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #8ec2f2;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .per-month--dollar {
+    margin-top: 5px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 75%;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 17.5px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li svg {
+    margin-right: 10px;
+    width: 32px;
+    height: 30px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover {
+    background-color: #252b42;
+    color: #ffffff;
+    margin-bottom: 60px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover h3 {
+    color: #ffffff;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover p {
+    color: #ffffff;
+  }
+  main #prices .container .pricing .price-button button {
+    margin-top: 45px;
+    margin-left: 10px;
+    height: 52px;
+    width: 246px;
+    background-color: #23a6f0;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px, 40px, 15px, 40px;
+    gap: 10px;
+  }
+  main #prices .container .pricing .price-button button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border: 2px solid #23a6f0;
+  }
+  main #contact {
+    height: auto;
+    padding: 50px;
+  }
+  main #contact .container {
+    padding: 0 95px;
+  }
+  main #contact .container .contact-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #contact .container .contact-email .contact-text {
+    width: 45%;
+  }
+  main #contact .container .contact-email .contact-text h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+  main #contact .container .contact-email .contact-text p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  main #contact .container .contact-email .email {
+    margin-top: 19.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 30px;
+  }
+  main #contact .container .contact-email .email .email-input {
+    border: #ffffff;
+    background-color: #ffffff;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #737373;
+    padding: 20px;
+  }
+  main #contact .container .contact-email .email .submit {
+    text-align: center;
+    background-color: #24a5f0;
+    cursor: pointer;
+    border: #ffffff;
+    color: #ffffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+  }
+  main #contact .container .contact-email .email .submit:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #0077ff;
+    color: #ffffff;
+    font-size: small;
+  }
+}
+
+@media (max-width: 992px) {
+  main #home .container {
+    padding: 0 50px;
+  }
+  main #home .container .home-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10%;
+  }
+  main #home .container .home-main .first-part--about {
+    padding-top: 15%;
+  }
+  main #home .container .home-main .first-part--about h1 {
+    width: 75%;
+    margin-bottom: 35px;
+    position: static;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+  main #home .container .home-main .first-part--about h4 {
+    margin-bottom: 35px;
+    margin-right: 45%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: left;
+  }
+  main #home .container .home-main .first-part--about .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #home .container .home-main .first-part--about .buttons .first-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 10px;
+    height: auto;
+    background-color: #23a6f0;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 37px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .first-part--about .buttons .first-button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border: 1px solid #23a6f0;
+  }
+  main #home .container .home-main .first-part--about .buttons .second-button {
+    height: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 37px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .first-part--about .buttons .second-button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #23a6f0;
+    color: #ffffff;
+    border: 1px solid #23a6f0;
+  }
+  main #home .container .home-main .second-part--card {
+    background-color: #ffffff;
+    color: #252b42;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #home .container .home-main .second-part--card h3 {
+    color: #252b42;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  main #home .container .home-main .second-part--card .appointment h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  main #home .container .home-main .second-part--card .appointment input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding: 10px;
+    text-align: left;
+  }
+  main #home .container .home-main .second-part--card .appointment .form-control {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  main #home .container .home-main .second-part--card .appointment .submit {
+    margin-top: 30px;
+    background-color: #23a6f0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .second-part--card .appointment .submit:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border-color: #23a6f0;
+  }
+  main #leading-medicine {
+    background-color: white;
+  }
+  main #leading-medicine .container {
+    padding: 0 55px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 112px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information p {
+    word-break: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards {
+    width: 29.5%;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases {
+    padding: 30px 35px 30px 35px;
+    background-color: #8ec2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases .icon {
+    width: 73px;
+    height: 72px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin: 0 10px;
+    color: #ffffff;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul {
+    background-color: #ffffff;
+    padding: 28px 20px 28px 20px;
+    border-radius: 11px;
+    border: 1px solid #a9d6ff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+    margin-bottom: 5px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a {
+    color: #23a6f0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    margin-bottom: 5px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+    letter-spacing: 0.9px;
+  }
+  main #the-best--doctors {
+    background-color: #fafafa;
+  }
+  main #the-best--doctors .container {
+    padding: 0 55px;
+  }
+  main #the-best--doctors .container .testimonials .brief-information {
+    width: 60%;
+  }
+  main #the-best--doctors .container .testimonials .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #the-best--doctors .container .testimonials .brief-information p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #the-best--doctors .container .testimonials .all-cards {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards {
+    text-align: left;
+    border-radius: 5px;
+    background-color: yellow;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards img {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #FAQ .container {
+    padding: 0 50px;
+  }
+  main #FAQ .container .About-FAQ--cards .brief-information {
+    width: 56%;
+  }
+  main #FAQ .container .About-FAQ--cards .brief-information h2 {
+    font-size: 40px;
+  }
+  main #FAQ .container .About-FAQ--cards .brief-information p {
+    font-size: 16px;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards {
+    padding: 25px 16px;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards .card-text a {
+    font-size: 18px;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards .card-text p {
+    font-size: 16px;
+  }
+  main #prices .container {
+    padding: 0 20px;
+  }
+  main #prices .container .pricing .brief-information {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  main #prices .container .pricing .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #prices .container .pricing .brief-information p {
+    width: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #prices .container .pricing .pricing-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: calc(100% / 3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 2px;
+    border: 1px solid #23a6f0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #737373;
+    margin-left: 55px;
+    margin-bottom: 35px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 35px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .price {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #23a6f0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .dollar {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin-right: 10px;
+    color: #23a6f0;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #8ec2f2;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .per-month--dollar {
+    margin-top: 5px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 15px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 9.5px;
+    margin-right: 5px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li svg {
+    width: 13%;
+    height: 11.5%;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover {
+    background-color: #252b42;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover h3 {
+    color: #ffffff;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover p {
+    color: #ffffff;
+  }
+  main #prices .container .pricing .price-button button {
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: #23a6f0;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px, 40px, 15px, 40px;
+    gap: 10px;
+  }
+  main #prices .container .pricing .price-button button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border: 2px solid #23a6f0;
+  }
+  main #contact .container {
+    padding: 0 20px;
+  }
+  main #contact .container .contact-email .contact-text h2 {
+    font-size: 35px;
+  }
+  main #contact .container .contact-email .contact-text p {
+    font-size: 13px;
+    width: 100%;
+  }
+  main #contact .container .contact-email .email form .email-input {
+    font-size: 15px;
+    width: 269px;
+    height: 58px;
+    text-indent: 10px;
+  }
+  main #contact .container .contact-email .email form button {
+    padding: 15px 22px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  main #home .container {
+    padding: 0 80px;
+  }
+  main #home .container .home-main {
+    display: block;
+    color: #ffffff;
+    padding-top: 10%;
+  }
+  main #home .container .home-main .first-part--about {
+    padding-top: 15%;
+  }
+  main #home .container .home-main .first-part--about h1 {
+    width: 85%;
+    margin-bottom: 35px;
+    margin-left: 8%;
+    position: static;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+  main #home .container .home-main .first-part--about h4 {
+    width: 70%;
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-left: 16%;
+  }
+  main #home .container .home-main .first-part--about .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #home .container .home-main .first-part--about .buttons .first-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 10px;
+    height: auto;
+    background-color: #23a6f0;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 37px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .first-part--about .buttons .first-button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border: 1px solid #23a6f0;
+  }
+  main #home .container .home-main .first-part--about .buttons .second-button {
+    height: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 37px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .first-part--about .buttons .second-button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #23a6f0;
+    color: #ffffff;
+    border: 1px solid #23a6f0;
+  }
+  main #home .container .home-main .second-part--card {
+    background-color: #ffffff;
+    color: #252b42;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #home .container .home-main .second-part--card h3 {
+    color: #252b42;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  main #home .container .home-main .second-part--card .appointment h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  main #home .container .home-main .second-part--card .appointment input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding: 10px;
+    text-align: left;
+  }
+  main #home .container .home-main .second-part--card .appointment .form-control {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  main #home .container .home-main .second-part--card .appointment .submit {
+    margin-top: 30px;
+    background-color: #23a6f0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .second-part--card .appointment .submit:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border-color: #23a6f0;
+  }
+  main #leading-medicine {
+    background-color: white;
+  }
+  main #leading-medicine .container {
+    padding: 0 85px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 112px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information p {
+    word-break: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card {
+    height: auto;
+    display: block;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards {
+    width: 100%;
+    margin-top: 40px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases {
+    padding: 30px 35px 30px 35px;
+    background-color: #8ec2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases .icon {
+    width: 73px;
+    height: 72px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin: 0 10px;
+    color: #ffffff;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul {
+    background-color: #ffffff;
+    padding: 28px 30px 28px 30px;
+    border-radius: 11px;
+    border: 1px solid #a9d6ff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+    margin-bottom: 10px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a {
+    color: #23a6f0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    margin-bottom: 5px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+    letter-spacing: 0.9px;
+  }
+  main #the-best--doctors {
+    background-color: #fafafa;
+  }
+  main #the-best--doctors .container {
+    padding: 0 35px;
+  }
+  main #the-best--doctors .container .testimonials .brief-information {
+    width: 86%;
+  }
+  main #the-best--doctors .container .testimonials .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #the-best--doctors .container .testimonials .brief-information p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #the-best--doctors .container .testimonials .all-cards {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards {
+    text-align: left;
+    border-radius: 5px;
+    background-color: yellow;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards svg {
+    margin-top: 20px;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards p {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #FAQ {
+    background-color: #fafafa;
+  }
+  main #FAQ .container {
+    padding: 0 35px;
+  }
+  main #FAQ .container .About-FAQ--cards .brief-information {
+    width: 65%;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards {
+    width: 45%;
+  }
+  main #prices .container {
+    padding: 0 20px;
+  }
+  main #prices .container .pricing .brief-information {
+    width: 100%;
+    text-align: center;
+  }
+  main #prices .container .pricing .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #prices .container .pricing .brief-information p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #prices .container .pricing .pricing-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: calc(100% / 2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #23a6f0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 30px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name p {
+    width: 60%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #737373;
+    margin-left: 65px;
+    margin-bottom: 35px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 55px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .price {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #23a6f0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .dollar {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin-right: 10px;
+    color: #23a6f0;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #8ec2f2;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .per-month--dollar {
+    margin-top: 5px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li {
+    margin-top: 9.5px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover {
+    background-color: #252b42;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover h3 {
+    color: #ffffff;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover p {
+    color: #ffffff;
+  }
+  main #prices .container .pricing .price-button button {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    background-color: #23a6f0;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px, 40px, 15px, 40px;
+    gap: 10px;
+  }
+  main #prices .container .pricing .price-button button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border: 2px solid #23a6f0;
+  }
+  main #contact {
+    height: auto;
+    padding: 5px;
+  }
+  main #contact .container {
+    padding: 0 15px;
+  }
+  main #contact .container .contact-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #contact .container .contact-email .contact-text h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  main #contact .container .contact-email .contact-text p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  main #contact .container .contact-email .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main #contact .container .contact-email .email .email-input {
+    border: #ffffff;
+    background-color: #ffffff;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #737373;
+    padding: 20px;
+  }
+  main #contact .container .contact-email .email .submit {
+    text-align: center;
+    background-color: #24a5f0;
+    cursor: pointer;
+    border: #ffffff;
+    color: #ffffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+  }
+  main #contact .container .contact-email .email .submit:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #0077ff;
+    color: #ffffff;
+    font-size: small;
+  }
+}
+
+@media (max-width: 460px) {
+  main #home {
+    margin-top: 50px;
+  }
+  main #home .container {
+    padding: 0 40px;
+  }
+  main #home .container .home-main {
+    color: #ffffff;
+    padding-top: 10%;
+  }
+  main #home .container .home-main .first-part--about {
+    padding-top: 15%;
+  }
+  main #home .container .home-main .first-part--about h1 {
+    width: 85%;
+    margin-bottom: 0px;
+    position: static;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-left: 30px;
+  }
+  main #home .container .home-main .first-part--about h4 {
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+  main #home .container .home-main .first-part--about .buttons .first-button {
+    margin-right: 10px;
+    height: auto;
+    background-color: #23a6f0;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 37px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .first-part--about .buttons .first-button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border: 1px solid #23a6f0;
+  }
+  main #home .container .home-main .first-part--about .buttons .second-button {
+    height: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 37px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .first-part--about .buttons .second-button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #23a6f0;
+    color: #ffffff;
+    border: 1px solid #23a6f0;
+  }
+  main #home .container .home-main .second-part--card {
+    background-color: #ffffff;
+    color: #252b42;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #home .container .home-main .second-part--card h3 {
+    color: #252b42;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  main #home .container .home-main .second-part--card .appointment h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  main #home .container .home-main .second-part--card .appointment input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding: 10px;
+    text-align: left;
+  }
+  main #home .container .home-main .second-part--card .appointment .form-control {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  main #home .container .home-main .second-part--card .appointment .submit {
+    margin-top: 30px;
+    background-color: #23a6f0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px 36px 15px 36px;
+  }
+  main #home .container .home-main .second-part--card .appointment .submit:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border-color: #23a6f0;
+  }
+  main #leading-medicine {
+    background-color: white;
+  }
+  main #leading-medicine .container {
+    padding: 0 45px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 112px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #leading-medicine .container .leading-medicine--main .brief-information p {
+    word-break: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card {
+    height: auto;
+    display: block;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards {
+    width: 100%;
+    margin-top: 40px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases {
+    padding: 30px 35px 30px 35px;
+    background-color: #8ec2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases .icon {
+    width: 73px;
+    height: 72px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cases h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin: 0 10px;
+    color: #ffffff;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul {
+    background-color: #ffffff;
+    padding: 28px 30px 28px 30px;
+    border-radius: 11px;
+    border: 1px solid #a9d6ff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+    margin-bottom: 10px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a {
+    color: #23a6f0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    margin-bottom: 5px;
+  }
+  main #leading-medicine .container .leading-medicine--main .triple-card .two-cards .cards-ul a:hover {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    color: #23a6f0;
+    letter-spacing: 0.9px;
+  }
+  main #the-best--doctors {
+    background-color: #fafafa;
+  }
+  main #the-best--doctors .container {
+    padding: 0 45px;
+  }
+  main #the-best--doctors .container .testimonials .brief-information {
+    width: 100%;
+  }
+  main #the-best--doctors .container .testimonials .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #the-best--doctors .container .testimonials .brief-information p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #the-best--doctors .container .testimonials .all-cards {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards {
+    text-align: left;
+    border-radius: 5px;
+    background-color: yellow;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards svg {
+    margin-top: 20px;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards p {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #the-best--doctors .container .testimonials .all-cards .testimonials-cards img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #FAQ {
+    background-color: #fafafa;
+  }
+  main #FAQ .container {
+    padding: 0 65px;
+  }
+  main #FAQ .container .About-FAQ--cards .brief-information {
+    width: 100%;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards {
+    width: 100%;
+  }
+  main #FAQ .container .About-FAQ--cards .FAQ-cards .child-FAQ--cards h5 {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  main #prices .container {
+    padding: 0 50px;
+  }
+  main #prices .container .pricing .brief-information {
+    width: 100%;
+  }
+  main #prices .container .pricing .brief-information h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
+    margin-bottom: 10px;
+  }
+  main #prices .container .pricing .brief-information p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: #737373;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 1px solid #23a6f0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 30px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name p {
+    width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color: #737373;
+    margin-left: 0px;
+    margin-bottom: 35px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 55px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .price {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #23a6f0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .dollar {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    margin-right: 10px;
+    color: #23a6f0;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    color: #8ec2f2;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-name .month-price .per-month--dollar {
+    margin-top: 5px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li {
+    margin-top: 9.5px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards .card-ul--icons ul li p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover {
+    background-color: #252b42;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover h3 {
+    color: #ffffff;
+  }
+  main #prices .container .pricing .pricing-cards .three-price--cards:hover p {
+    color: #ffffff;
+  }
+  main #prices .container .pricing .price-button button {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    background-color: #23a6f0;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    padding: 15px, 40px, 15px, 40px;
+    gap: 10px;
+  }
+  main #prices .container .pricing .price-button button:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #23a6f0;
+    border: 2px solid #23a6f0;
+  }
+  main #contact {
+    height: auto;
+    padding: 5px;
+  }
+  main #contact .container {
+    padding: 0 15px;
+  }
+  main #contact .container .contact-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #contact .container .contact-email .contact-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main #contact .container .contact-email .contact-text h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  main #contact .container .contact-email .contact-text p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+  }
+  main #contact .container .contact-email .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 20px;
+  }
+  main #contact .container .contact-email .email .email-input {
+    border: #ffffff;
+    background-color: #ffffff;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #737373;
+    padding: 20px;
+  }
+  main #contact .container .contact-email .email .submit {
+    text-align: center;
+    background-color: #24a5f0;
+    cursor: pointer;
+    border: #ffffff;
+    color: #ffffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.20000000298023224px;
+  }
+  main #contact .container .contact-email .email .submit:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #0077ff;
+    color: #ffffff;
+  }
+}
+/*# sourceMappingURL=index.css.map */

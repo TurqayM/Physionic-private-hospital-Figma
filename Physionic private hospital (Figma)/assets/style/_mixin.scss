@@ -1,0 +1,22 @@
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin footer-h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #252B42;    
+}
+
